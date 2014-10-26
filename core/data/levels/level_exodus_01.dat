@@ -1,0 +1,79 @@
+{
+	#############################################################################		
+			"name" : "level_exodus_01",
+			
+			# width of the game world in tiles
+			"width" : "1536",
+			
+			# length of the game world in tiles
+			"height" : "1536",
+			
+			"initialSettings" : {
+				"cameraPosition" : { "x" : 0, "y" : 0 }
+			},
+
+			"background" : { 
+				"layers" : [
+					/*{	
+						"depth" :5,
+						"texture" : "levels/plasma_01.png",
+						"tiling" : false
+					},
+					{	
+						"depth" : 0.9,
+						"texture" : "levels/fog_01.png",
+						"scroll" : { "x" : "500", "y" : "0" },
+						"tiling" : true,
+						"zoomFactor" : 0.9
+					}*/
+				]
+			},
+			
+
+			
+		########################################
+		# ASTEROIDS
+		########################################
+			"asteroids" : [
+
+				],
+			
+		########################################
+		# WEBS
+		########################################
+			"webs" : [
+
+			],
+		########################################
+		# FACTIONS
+		########################################
+			
+			"factions" : [
+				{
+					"ownerId" : 0,
+					"controller" : "PlayerController",
+					"antAnimation" : { "atlasFile" : "anima//ant//blob_white.atlas", "atlasId" : "blob"},
+					"color" : { "r" : 1.0, "g" : 0.3, "b" : 0.0 }
+					
+				},
+				{
+					"ownerId" : 1, 
+					"controller" : "DummyController",
+					"antAnimation" : { "atlasFile" : "anima//ant//blob_black.atlas", "atlasId" : "blob"},
+					"color" : { "r" : 0.0, "g" : 0.3, "b" : 1.0 }
+				}			
+			],
+			
+		########################################
+		# UNITS
+		########################################
+			"units" : [
+
+		
+			]
+		########################################
+
+
+	#############################################################################
+
+}
